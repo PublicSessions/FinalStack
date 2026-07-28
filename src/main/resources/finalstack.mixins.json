@@ -1,0 +1,23 @@
+{
+	"required": true,
+	"package": "com.ciallo.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ItemMaxCountMixin",
+		"ItemStackMaxCountMixin",
+		"ItemStackCodecMixin",
+		"SlotMaxCountMixin",
+		"InventoryMaxCountMixin",
+		"DataComponentTypesMixin",
+		"ItemStack3Mixin"
+	],
+	"client": [
+		"DrawContextMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

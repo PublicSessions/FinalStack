@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "finalstack",
+	"version": "${version}",
+	"name": "FinalStack",
+	"description": "Customizable max stack sizes, count abbreviation, and a configuration GUI.",
+	"authors": [
+		"P1ay2r"
+	],
+	"contact": {
+		"sources": "https://github.com/ciallo/FinalStack"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/finalstack/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.ciallo.FinalStack"
+		],
+		"client": [
+			"com.ciallo.FinalStackClient"
+		]
+	},
+	"mixins": [
+		"finalstack.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
